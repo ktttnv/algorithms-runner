@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Header image" src="../assets/header.jpg" height="350"/>
+    <img alt="Header image" src="../assets/header.jpg" height="350" />
     <HelloWorld msg="Welcome to Algorithm Runner App" />
   </div>
 </template>
