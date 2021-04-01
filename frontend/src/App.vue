@@ -1,20 +1,21 @@
 <template>
+  <div id=""></div>
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
   <router-view />
   <el-button type="primary">el-button</el-button>
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <Header msg="Welcome to Your Vue.js App" />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Header from "./components/Header/Header.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Header,
   },
 };
 </script>
