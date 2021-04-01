@@ -4,7 +4,20 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view />
+  <el-button type="primary">el-button</el-button>
+  <HelloWorld msg="Welcome to Your Vue.js App" />
 </template>
+
+<script>
+import HelloWorld from "./components/HelloWorld.vue";
+
+export default {
+  name: "App",
+  components: {
+    HelloWorld,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
