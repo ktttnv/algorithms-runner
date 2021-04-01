@@ -1,13 +1,18 @@
 <template>
   <div class="header">
     <h1>{{ msg }}</h1>
+    <Navigation></Navigation>
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
+import Navigation from "./Navigation.vue"
 
 @Options({
+  components: {
+    Navigation,
+  },
   props: {
     msg: String,
   },

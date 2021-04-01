@@ -1,18 +1,11 @@
 <template>
   <div class="home">
-    <img alt="Header image" src="../assets/header.jpg" height="350" />
-    <Header msg="Welcome to Algorithm Runner App" />
+    <img alt="Home image" src="../assets/header.jpg" height="350" />
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import Header from "../components/Header/Header.vue"; // @ is an alias to /src
+import { Vue } from "vue-class-component";
 
-@Options({
-  components: {
-    Header,
-  },
-})
 export default class Home extends Vue {}
 </script>
