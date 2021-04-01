@@ -1,5 +1,6 @@
 <template>
   <div class="header">
+    <DarkMode></DarkMode>
     <h1>{{ msg }}</h1>
     <Navigation></Navigation>
   </div>
@@ -7,11 +8,13 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import Navigation from "./Navigation.vue"
+import Navigation from "./Navigation.vue";
+import DarkMode from "./DarkMode.vue";
 
 @Options({
   components: {
     Navigation,
+    DarkMode,
   },
   props: {
     msg: String,
@@ -23,4 +26,8 @@ export default class Header extends Vue {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+h1 {
+  color: #409dfe;
+}
+</style>
