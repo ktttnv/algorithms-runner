@@ -1,25 +1,29 @@
 <template>
-  <div class="footer">
+<div class="footer">
     <h3>{{ msg }}</h3>
-  </div>
+</div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
+import {
+    Options,
+    Vue
+} from "vue-class-component";
 
 @Options({
-  props: {
-    msg: String,
-  },
+    props: {
+        msg: String,
+    },
 })
 export default class Footer extends Vue {
-  msg!: string;
+    msg!: string;
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+
+<style lang="scss" scoped>
 h3 {
-  color: #409dfe;
+    color: #409dfe;
 }
 </style>

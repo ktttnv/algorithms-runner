@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+<div class="container">
     <Header msg="Algorithm Runner" />
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
@@ -7,7 +7,7 @@
     </div>
     <router-view /> -->
     <Footer msg="Hi, I'm a footer" />
-  </div>
+</div>
 </template>
 
 <script>
@@ -15,39 +15,39 @@ import Header from "./components/Header/Header.vue";
 import Footer from "./components/Footer/Footer.vue";
 
 export default {
-  name: "App",
-  components: {
-    Header,
-    Footer,
-  },
+    name: "App",
+    components: {
+        Header,
+        Footer,
+    },
 };
 </script>
 
 <style lang="scss">
 .container {
-  width: 960px;
-  margin: 0 auto;
-  background-color: rgb(230, 248, 255);
+    width: 960px;
+    margin: 0 auto;
+    background-color: rgb(230, 248, 255);
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
 }
 
 #nav {
-  padding: 30px;
+    padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+    a {
+        font-weight: bold;
+        color: #2c3e50;
 
-    &.router-link-exact-active {
-      color: #42b983;
+        &.router-link-exact-active {
+            color: #42b983;
+        }
     }
-  }
 }
 </style>
