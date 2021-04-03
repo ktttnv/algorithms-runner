@@ -40,6 +40,7 @@ export default class Menu extends Vue {
 .menu {
     margin: 10px;
     width: calc(33% - 24px);
+    display: inline-block;
 }
 
 h3 {

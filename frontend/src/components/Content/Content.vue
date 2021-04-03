@@ -1,6 +1,6 @@
 <template>
 <div class="content">
-    <h3>{{ msg }}</h3>
+    <Article />
     <Menu />
 </div>
 </template>
@@ -10,14 +10,13 @@ import {
     Options,
     Vue
 } from "vue-class-component";
+import Article from "./Article/Article.vue";
 import Menu from "./Menu/Menu.vue";
 
 @Options({
     components: {
+        Article,
         Menu,
-    },
-    props: {
-        msg: String,
     },
 })
 export default class Content extends Vue {
