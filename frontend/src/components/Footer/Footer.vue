@@ -1,8 +1,6 @@
 <template>
-<div class="header">
-    <DarkMode></DarkMode>
-    <h1>{{ msg }}</h1>
-    <Navigation></Navigation>
+<div class="footer">
+    <h3>{{ msg }}</h3>
 </div>
 </template>
 
@@ -11,19 +9,13 @@ import {
     Options,
     Vue
 } from "vue-class-component";
-import Navigation from "./Navigation.vue";
-import DarkMode from "./DarkMode.vue";
 
 @Options({
-    components: {
-        Navigation,
-        DarkMode,
-    },
     props: {
         msg: String,
     },
 })
-export default class Header extends Vue {
+export default class Footer extends Vue {
     msg!: string;
 }
 </script>
@@ -31,7 +23,7 @@ export default class Header extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style lang="scss" scoped>
-h1 {
+h3 {
     color: #409dfe;
 }
 </style>
