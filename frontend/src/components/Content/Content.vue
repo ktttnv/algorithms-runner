@@ -1,6 +1,7 @@
 <template>
-<div class="footer">
+<div class="content">
     <h3>{{ msg }}</h3>
+    <Menu />
 </div>
 </template>
 
@@ -9,28 +10,21 @@ import {
     Options,
     Vue
 } from "vue-class-component";
+import Menu from "./Menu/Menu.vue";
 
 @Options({
+    components: {
+        Menu,
+    },
     props: {
         msg: String,
     },
 })
-export default class Footer extends Vue {
+export default class Content extends Vue {
     msg!: string;
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
-<style lang="scss" scoped>
-.footer {
-    display: flex;
-    height: 70px;
-    background-color: #097df8;
-}
-
-h3 {
-    color: #e5effa;
-    margin: auto;
-}
-</style>
+<style lang="scss" scoped></style>

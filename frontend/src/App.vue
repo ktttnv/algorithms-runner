@@ -1,6 +1,7 @@
 <template>
 <div class="container">
     <Header msg="Algorithm Runner" />
+    <Content />
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -12,12 +13,14 @@
 
 <script>
 import Header from "./components/Header/Header.vue";
+import Content from "./components/Content/Content.vue";
 import Footer from "./components/Footer/Footer.vue";
 
 export default {
     name: "App",
     components: {
         Header,
+        Content,
         Footer,
     },
 };
