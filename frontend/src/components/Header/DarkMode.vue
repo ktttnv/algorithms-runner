@@ -10,8 +10,9 @@
       inactive-icon-class="el-icon-sunny"
     >
     </el-switch>
-    <el-button v-if="isDarkMode" type="info" icon="el-icon-moon" circle></el-button>
-    <el-button v-else type="warning" icon="el-icon-sunny" circle></el-button>
+    <el-button v-if="isDarkMode" type="info" icon="el-icon-moon" circle>
+    </el-button>
+    <el-button v-else type="warning" icon="el-icon-sunny" circle> </el-button>
   </div>
 </template>
 

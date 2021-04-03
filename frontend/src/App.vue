@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <Header msg="Algorithm Runner" />
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
@@ -21,6 +21,10 @@ export default {
 </script>
 
 <style lang="scss">
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
