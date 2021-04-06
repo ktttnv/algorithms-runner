@@ -31,8 +31,8 @@ export default class Article extends Vue {
 <style lang="scss" scoped>
 .article {
     margin: 10px;
+    margin-left: 20px;
     width: calc(66% - 24px);
-    // display: inline-block;
     text-align: left;
     vertical-align: top;
 }

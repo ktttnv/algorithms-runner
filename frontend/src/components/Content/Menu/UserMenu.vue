@@ -1,7 +1,7 @@
 <template>
 <div class="user-menu">
-    <div>UserMenu</div>
-    <el-menu default-active="2">
+    <div class="user-menu-title">User Menu</div>
+    <el-menu>
         <el-menu-item index="1">
             <i class="el-icon-s-home"></i>
             <span>Home</span>
@@ -41,6 +41,10 @@ export default class UserMenu extends Vue {
     margin: 10px;
     display: flex;
     flex-direction: column;
+}
+
+.user-menu-title {
+    margin: 10px;;
 }
 
 h3 {

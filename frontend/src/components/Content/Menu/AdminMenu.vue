@@ -1,18 +1,18 @@
 <template>
 <div class="admin-menu">
-    <div>AdminMenu</div>
-    <el-menu default-active="2">
+    <div class="admin-menu-title">Admin Menu</div>
+    <el-menu>
         <el-menu-item index="1">
-            <i class="el-icon-s-home"></i>
-            <span>Home</span>
+            <i class="el-icon-data-analysis"></i>
+            <span>Analytics</span>
         </el-menu-item>
         <el-menu-item index="2">
-            <i class="el-icon-s-data"></i>
-            <span>Algorithms</span>
+            <i class="el-icon-folder-opened"></i>
+            <span>Edit 1</span>
         </el-menu-item>
         <el-menu-item index="3">
-            <i class="el-icon-info"></i>
-            <span>About</span>
+            <i class="el-icon-edit"></i>
+            <span>Edit 2</span>
         </el-menu-item>
     </el-menu>
 </div>
@@ -41,6 +41,10 @@ export default class AdminMenu extends Vue {
     margin: 10px;
     display: flex;
     flex-direction: column;
+}
+
+.admin-menu-title {
+    margin: 10px;;
 }
 
 h3 {
