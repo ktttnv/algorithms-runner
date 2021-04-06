@@ -32,7 +32,7 @@ export default class Article extends Vue {
 .article {
     margin: 10px;
     width: calc(66% - 24px);
-    display: inline-block;
+    // display: inline-block;
     text-align: left;
     vertical-align: top;
 }

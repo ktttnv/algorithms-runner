@@ -26,4 +26,8 @@ export default class Content extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.content {
+    display: flex;
+}
+</style>
