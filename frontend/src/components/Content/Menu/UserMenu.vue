@@ -1,6 +1,6 @@
 <template>
 <div class="user-menu">
-    <div class="user-menu-title">User Menu</div>
+    <div class="user-menu-title"><b>User Menu</b></div>
     <el-menu>
         <el-menu-item index="1">
             <i class="el-icon-s-home"></i>

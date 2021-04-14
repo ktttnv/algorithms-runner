@@ -38,6 +38,7 @@ export default class CodeRunner extends Vue {
 <style lang="scss" scoped>
 .code-runner {
     margin-top: 15px;
+    margin-bottom: 30px;
     border-style: solid;
     border-color: rgb(27, 89, 160);
     border-width: 2px;

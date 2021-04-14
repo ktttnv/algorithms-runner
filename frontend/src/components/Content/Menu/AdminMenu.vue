@@ -1,6 +1,6 @@
 <template>
 <div class="admin-menu">
-    <div class="admin-menu-title">Admin Menu</div>
+    <div class="admin-menu-title"><b>Admin Menu</b></div>
     <el-menu>
         <el-menu-item index="1">
             <i class="el-icon-data-analysis"></i>

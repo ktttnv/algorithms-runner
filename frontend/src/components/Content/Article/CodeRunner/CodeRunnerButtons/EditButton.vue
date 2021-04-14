@@ -1,6 +1,8 @@
 <template>
 <div class="edit-button">
-    <el-button type="primary" icon="el-icon-edit"></el-button>
+    <el-tooltip class="item" effect="light" content="Edit code" placement="bottom-end">
+        <el-button type="primary" icon="el-icon-edit"></el-button>
+    </el-tooltip>
 </div>
 </template>
 

@@ -1,6 +1,8 @@
 <template>
 <div class="run-button">
-    <el-button type="success">Run code</el-button>
+    <el-tooltip class="item" effect="light" content="Run code. What have you expected?" placement="bottom-start">
+        <el-button type="success">Run code</el-button>
+    </el-tooltip>
 </div>
 </template>
 
