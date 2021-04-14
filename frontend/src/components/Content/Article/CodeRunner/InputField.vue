@@ -24,10 +24,9 @@ export default class InputFiled extends Vue {
 
 <style lang="scss" scoped>
 .input-field {
-    margin: 10px;
     height: 70px;
     border-style: solid;
-    border-color: blue;
+    border-color: rgb(27, 89, 160);
     border-width: 2px;
     background-color: rgb(255, 254, 254);
     

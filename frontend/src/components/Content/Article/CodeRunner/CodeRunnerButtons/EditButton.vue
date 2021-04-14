@@ -1,6 +1,6 @@
 <template>
-<div class="run-button">
-    <el-button type="success">Run code</el-button>
+<div class="edit-button">
+    <el-button type="primary" icon="el-icon-edit"></el-button>
 </div>
 </template>
 
@@ -15,16 +15,11 @@ import {
         msg: String,
     },
 })
-export default class RunButton extends Vue {
+export default class EditButton extends Vue {
     msg!: string;
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
-<style lang="scss" scoped>
-.run-button {
-    margin: 10px 0;
-    float: right;
-}
-</style>
+<style lang="scss" scoped></style>
