@@ -1,6 +1,7 @@
 <template>
 <div class="output-field">
-
+    <div class="output-label">Output</div>
+    <div class="output"></div>
 </div>
 </template>
 
@@ -23,7 +24,11 @@ export default class OutputField extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style lang="scss" scoped>
-.output-field {
+.output-label {
+    margin: 0 0 5px 10px;
+}
+
+.output {
     height: 70px;
     border-style: solid;
     border-color: rgb(27, 89, 160);
