@@ -3,6 +3,7 @@
     <InputCode />
     <InputField />
     <OutputField />
+    <RunButton />
 </div>
 </template>
 
@@ -11,15 +12,17 @@ import {
     Options,
     Vue
 } from "vue-class-component";
-import InputCode from "./InputCode.vue";
+import InputCode from "./CodeInput.vue";
 import InputField from "./InputField.vue";
 import OutputField from "./OutputField.vue";
+import RunButton from "./RunButton.vue";
 
 @Options({
     components: {
         InputCode,
         InputField,
         OutputField,
+        RunButton,
     },
     props: {
         msg: String,
