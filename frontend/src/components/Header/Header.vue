@@ -1,7 +1,9 @@
 <template>
 <div class="header">
     <DarkMode></DarkMode>
-    <h1>{{ msg }}</h1>
+    <div class="title-name">
+        <h1>{{ msg }}</h1>
+    </div>
     <Navigation></Navigation>
 </div>
 </template>
@@ -31,6 +33,10 @@ export default class Header extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style lang="scss" scoped>
+.title-name {
+    height: 70px;
+}
+
 h1 {
     color: #409dfe;
 }
