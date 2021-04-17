@@ -18,17 +18,17 @@ export class GroupService {
             .exec();
     }
 
-    public async findOne(customerId: string): Promise<Group> {
-        const customer = await this.groupModel
-            .findById({ _id: customerId })
+    public async findOne(groupID: string): Promise<Group> {
+        const group = await this.groupModel
+            .findById({ _id: groupID })
             .populate('organization')
             .exec();
 
-        if (!customer) {
-            throw new NotFoundException(`Customer #${customerId} not found`);
+        if (!group) {
+            throw new NotFoundException(`Customer #${groupID} not found`);
         }
 
-        return customer;
+        return group;
     }
 
     public async create(
