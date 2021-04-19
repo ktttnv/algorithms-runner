@@ -7,6 +7,8 @@ import { GroupModule } from './group/group.module';
 import { ArticleModule } from './article/article.module';
 import { AlgoModule } from './algo/algo.module';
 import { LocaleModule } from './locale/locale.module';
+import { StringLocModule } from './string-loc/string-loc.module';
+import { LocaleLabelModule } from './locale-label/locale-label.module';
 
 @Module({
   imports: [ConfigModule.forRoot(),
@@ -22,7 +24,9 @@ import { LocaleModule } from './locale/locale.module';
     GroupModule,
     ArticleModule,
     AlgoModule,
-    LocaleModule],
+    LocaleModule,
+    StringLocModule,
+    LocaleLabelModule],
   controllers: [AppController],
   providers: [AppService],
 })
