@@ -1,6 +1,6 @@
 <template>
 <div class="code-runner">
-    <InputCode class="input-code-runner"/>
+    <CodeInput class="code-input-runner"/>
     <InputField class="input-field-runner"/>
     <OutputField class="output-field-runner"/>
     <CodeRunnerButtons class="buttons-runner"/>
@@ -12,14 +12,14 @@ import {
     Options,
     Vue
 } from "vue-class-component";
-import InputCode from "./CodeInput.vue";
+import CodeInput from "./CodeInput.vue";
 import InputField from "./InputField.vue";
 import OutputField from "./OutputField.vue";
 import CodeRunnerButtons from "./CodeRunnerButtons/CodeRunnerButtons.vue";
 
 @Options({
     components: {
-        InputCode,
+        CodeInput,
         InputField,
         OutputField,
         CodeRunnerButtons,
@@ -45,7 +45,7 @@ export default class CodeRunner extends Vue {
     background-color: rgb(255, 247, 234);
 }
 
-.input-code-runner {
+.code-input-runner {
     margin: 20px 10px;
 }
 
